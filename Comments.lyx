@@ -1,0 +1,223 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Project Euler solutions with Python 3
+\end_layout
+
+\begin_layout Subsection*
+Problem 1
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+answer=0                  
+\end_layout
+
+\begin_layout Plain Layout
+
+for i in range(1,1000):   
+\end_layout
+
+\begin_layout Plain Layout
+
+	if i%3==0 or i%5==0:         
+\end_layout
+
+\begin_layout Plain Layout
+
+		answer+=i         
+\end_layout
+
+\begin_layout Plain Layout
+
+print(answer)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Problem 2
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+answer, a, b = 0, 1, 2   
+\end_layout
+
+\begin_layout Plain Layout
+
+while b < 4000000:         
+\end_layout
+
+\begin_layout Plain Layout
+
+	if b%2==0:                   
+\end_layout
+
+\begin_layout Plain Layout
+
+		answer+=b           
+\end_layout
+
+\begin_layout Plain Layout
+
+	a, b = b, a + b     
+\end_layout
+
+\begin_layout Plain Layout
+
+print(answer)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Problem 3
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+k=600851475143                                   
+\end_layout
+
+\begin_layout Plain Layout
+
+primeFactors=[]                                    
+\end_layout
+
+\begin_layout Plain Layout
+
+while k>1:
+\end_layout
+
+\begin_layout Plain Layout
+
+	i=2                                                
+\end_layout
+
+\begin_layout Plain Layout
+
+	while k%i!=0:
+\end_layout
+
+\begin_layout Plain Layout
+
+		i+=1                                         
+\end_layout
+
+\begin_layout Plain Layout
+
+	k=k/i                                             
+\end_layout
+
+\begin_layout Plain Layout
+
+	primeFactors.append(i)
+\end_layout
+
+\begin_layout Plain Layout
+
+print(primeFactors[len(primeFactors)-1])      
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
