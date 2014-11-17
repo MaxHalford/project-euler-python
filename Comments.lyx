@@ -25,10 +25,9 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
-\spacing single
 \use_hyperref false
 \papersize default
-\use_geometry true
+\use_geometry false
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
@@ -52,10 +51,6 @@
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 2cm
-\topmargin 2cm
-\rightmargin 2cm
-\bottommargin 2cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -74,149 +69,1621 @@
 \begin_body
 
 \begin_layout Title
-Project Euler solutions with Python 3
+Project Euler Solutions with Python 3
 \end_layout
 
-\begin_layout Subsection*
-Problem 1
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-inline false
-status open
-
-\begin_layout Plain Layout
-
-answer=0                  
-\end_layout
-
-\begin_layout Plain Layout
-
-for i in range(1,1000):   
-\end_layout
-
-\begin_layout Plain Layout
-
-	if i%3==0 or i%5==0:         
-\end_layout
-
-\begin_layout Plain Layout
-
-		answer+=i         
-\end_layout
-
-\begin_layout Plain Layout
-
-print(answer)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection*
-Problem 2
+\begin_layout Author
+Max Halford
 \end_layout
 
 \begin_layout Standard
-\begin_inset listings
-inline false
-status open
-
-\begin_layout Plain Layout
-
-answer, a, b = 0, 1, 2   
-\end_layout
-
-\begin_layout Plain Layout
-
-while b < 4000000:         
-\end_layout
-
-\begin_layout Plain Layout
-
-	if b%2==0:                   
-\end_layout
-
-\begin_layout Plain Layout
-
-		answer+=b           
-\end_layout
-
-\begin_layout Plain Layout
-
-	a, b = b, a + b     
-\end_layout
-
-\begin_layout Plain Layout
-
-print(answer)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection*
-Problem 3
+\align left
+• Problems : https://projecteuler.net/problems
 \end_layout
 
 \begin_layout Standard
-\begin_inset listings
-inline false
-status open
-
-\begin_layout Plain Layout
-
-k=600851475143                                   
+\align left
+• Solutions : https://github.com/MaxHalford/Euler-Project.git
 \end_layout
 
-\begin_layout Plain Layout
-
-primeFactors=[]                                    
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
 \end_layout
 
-\begin_layout Plain Layout
-
-while k>1:
+\begin_layout Standard
+Answer : 
 \end_layout
 
-\begin_layout Plain Layout
-
-	i=2                                                
+\begin_layout Subsection*
+Problem 2 - Even Fibonacci number
 \end_layout
 
-\begin_layout Plain Layout
-
-	while k%i!=0:
+\begin_layout Standard
+Answer : 
 \end_layout
 
-\begin_layout Plain Layout
-
-		i+=1                                         
+\begin_layout Subsection*
+Problem 3 - Largest prime factor
 \end_layout
 
-\begin_layout Plain Layout
-
-	k=k/i                                             
+\begin_layout Standard
+Answer : 
 \end_layout
 
-\begin_layout Plain Layout
-
-	primeFactors.append(i)
+\begin_layout Subsection*
+Problem 4 - Largest palindrome product
 \end_layout
 
-\begin_layout Plain Layout
-
-print(primeFactors[len(primeFactors)-1])      
+\begin_layout Standard
+Answer : 
 \end_layout
 
-\end_inset
+\begin_layout Subsection*
+Problem 5 - Smallest multiple
+\end_layout
 
+\begin_layout Standard
+Answer : 
+\end_layout
 
+\begin_layout Subsection*
+Problem 6 - Sum square difference
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 7 - 10001st prime
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 8 - Largest product in a series
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Special Pythagorean triplet
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Summation of primes
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Largest product in a grid
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Highly divisible triangular number
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Large sum
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Longest Collatz sequence
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Lattice paths
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Power digit sum
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Number letter counts
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Maximum path sum I
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Counting Sundays
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Factorial digit sum
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Amicable numbers
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Names scores
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Non-abundant sums
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Lexicographic permutations
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - 1000-digit Fibonacci number
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Reciprocal cycles
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Quadratic primes
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Number spiral diagonals
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Distinct powers
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Digit fifth powers
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Coin sums
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Pandigital products
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Digit cancelling fractions
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Digit factorials
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Circular primes
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Double-base palindromes
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Truncatable primes
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Pandigital multiples
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Integer right triangles
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Champernowne's constant
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Pandigital prime
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Coded triangle numbers
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 - Multiples of 3 and 5
+\end_layout
+
+\begin_layout Standard
+Answer : 
 \end_layout
 
 \end_body

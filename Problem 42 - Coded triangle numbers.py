@@ -1,12 +1,12 @@
 import os
-os.chdir("C:/Users/Max/Documents/Computer Science/Python/Euler Project")
-names_file = open('p022_names.txt')
+os.chdir("C:/Users/Max/Documents/Github/Euler-Project")
+words_file = open('p042_words.txt')
 #then you convert the file to string
-names_string = names_file.read()
+words_string = words_file.read()
 #and with the string you can build an array by spliting at the commas and striping the guillemets
-names = [name.strip('"') for name in names_string.split(',')]
+words = [word.strip('"') for word in words_string.split(',')]
 #then use the built-in sorting function
-names.sort()
+words.sort()
 #create a dictionary giving the index of each letter
 values = {
  'A':1,

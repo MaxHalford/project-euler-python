@@ -1,5 +1,5 @@
 import os
-os.chdir("C:/Users/Max/Documents/Python/Euler Project")
+os.chdir("C:/Users/Max/Documents/Github/Euler-Project")
 names_file = open('p022_names.txt')
 #then you convert the file to string
 names_string = names_file.read()
