@@ -100,10 +100,6 @@ string ='''
 20849603980134001723930671666823555245252804609722
 53503534226472524250874054075591789781264330331690
 '''.strip()
-s=0
-array=[]
-for line in string.splitlines():
-    array.append(int(line))
-for i in range(0,len(array)):
-    s=s+array[i]
+array = [int(line) for line in string.splitlines()]
+s = sum(array)
 print(str(s)[:10])
