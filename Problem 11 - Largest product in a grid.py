@@ -49,6 +49,7 @@ grid_string = '''
 '''.strip()
 #for every line of grid_string
 for line in grid_string.splitlines():
+    print(line)
     #add every integer of that line to grid (thanks to .split)
     grid.append([int(number) for number in line.split()])
 maximum=0
