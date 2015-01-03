@@ -19,10 +19,10 @@ def numDivisors(n):
     return divisors
 def findTriangularIndex(factor_limit):
     n = 1
-    lnum, rnum = numDivisors(n), numDivisors(n+1)
+    lnum, rnum = numDivisors(n), numDivisors(n + 1)
     while lnum * rnum < 500:
         n += 1
-        lnum, rnum = rnum, numDivisors(n+1)
+        lnum, rnum = rnum, numDivisors(n + 1)
     return n
 index = findTriangularIndex(500)
 triangle = (index * (index + 1)) // 2

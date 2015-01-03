@@ -1,31 +1,31 @@
 #line product
-def lProduct(array,i,j):
-    product=1
-    for k in range(0,4):
-        product=product*array[i][j+k]
+def lProduct(array, i, j):
+    product = 1
+    for k in range(0, 4):
+        product = product * array[i][j + k]
     return product
 #column product
-def cProduct(array,i,j):
-    product=1
-    for k in range(0,4):
-        product=product*array[i+k][j]
+def cProduct(array, i, j):
+    product = 1
+    for k in range(0, 4):
+        product = product * array[i + k][j]
     return product
 #diagonal product that goes from top left to bottom right
-def d1Product(array,i,j):
-    product=1
-    for k in range(0,4):
-        product=product*array[i+k][j+k]
+def d1Product(array, i, j):
+    product = 1
+    for k in range(0, 4):
+        product = product * array[i + k][j + k]
     return product
 #diagonal product that goes from bottom left to top right
-def d2Product(array,i,j):
-    product=1
-    for k in range(0,4):
-        product=product*array[i-k][j+k]
+def d2Product(array, i, j):
+    product = 1
+    for k in range(0, 4):
+        product = product * array[i - k][j + k]
     return product
 #define the grid that will be used
 grid = []
 #copy/paste the grid as a string
-grid_string = '''
+gridString = '''
 08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08
 49 49 99 40 17 81 18 57 60 87 17 40 98 43 69 48 04 56 62 00
 81 49 31 73 55 79 14 29 93 71 40 67 53 88 30 03 49 13 36 65
@@ -48,31 +48,31 @@ grid_string = '''
 01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48
 '''.strip()
 #for every line of grid_string
-for line in grid_string.splitlines():
+for line in gridString.splitlines():
     print(line)
     #add every integer of that line to grid (thanks to .split)
     grid.append([int(number) for number in line.split()])
-maximum=0
+maximum = 0
 #go through every line
-for i in range(0,len(grid)):
+for i in range(0, len(grid)):
     #and every line
-    for j in range(0,len(grid)):
+    for j in range(0, len(grid)):
         #line product boundary condition
-        if j<len(grid)-3:
-            if lProduct(grid,i,j)>maximum:
-                maximum=lProduct(grid,i,j)
+        if j < len(grid) - 3:
+            if lProduct(grid, i, j) > maximum:
+                maximum = lProduct(grid, i, j)
         #column product boundary condition
-        if i<len(grid)-3:
-            if cProduct(grid,i,j)>maximum:
-                maximum=cProduct(grid,i,j)
+        if i < len(grid) - 3:
+            if cProduct(grid, i, j) > maximum:
+                maximum = cProduct(grid, i, j)
         #first diagonal product boundary condition
-        if i<len(grid)-3 and j<len(grid)-3:
-            if d1Product(grid,i,j)>maximum:
-                maximum=d1Product(grid,i,j)
+        if i < len(grid) - 3 and j < len(grid) - 3:
+            if d1Product(grid, i, j) > maximum:
+                maximum = d1Product(grid, i, j)
         #second diagonal product boundary condition
-        if i>2 and j<len(grid)-3:
-            if d2Product(grid,i,j)>maximum:
-                maximum=d2Product(grid,i,j)       
+        if i > 2 and j < len(grid) - 3:
+            if d2Product(grid, i, j) > maximum:
+                maximum = d2Product(grid, i, j)       
 print(maximum)
         
             
