@@ -1,4 +1,4 @@
-triangle_str = '''\
+tree = '''\
     75
     95 64
     17 47 82
@@ -14,15 +14,10 @@ triangle_str = '''\
     91 71 52 38 17 14 91 43 58 50 27 29 48
     63 66 04 68 89 53 67 30 73 16 69 87 40 31
     04 62 98 27 23 09 70 98 73 93 38 53 60 04 23'''
-T = [[int(i) for i in line.strip().split()] for line in triangle_str.splitlines()]
-def biggestNode(node1,node2):
-    if node1>node2:
-        return node1
-    else:
-        return node2
-for i in range(len(T)-2,-1,-1):
-    for j in range(0,i+1):
-        T[i][j]+=biggestNode(T[i+1][j],T[i+1][j+1])
+T = [[int(i) for i in line.strip().split()] for line in tree.splitlines()]
+for i in range(len(T) - 2, -1, -1):
+    for j in range(0, i + 1):
+        T[i][j] += max(T[i + 1][j], T[i + 1][j + 1])
 print(T[0][0])
 
 

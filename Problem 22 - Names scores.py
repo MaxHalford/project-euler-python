@@ -1,10 +1,10 @@
 import os
-os.chdir("C:/Users/Max/Documents/Github/Euler-Project")
-names_file = open('p022_names.txt')
+os.chdir('../Project-Euler')
+namesFile = open('p022_names.txt')
 #then you convert the file to string
-names_string = names_file.read()
+namesString = namesFile.read()
 #and with the string you can build an array by spliting at the commas and striping the guillemets
-names = [name.strip('"') for name in names_string.split(',')]
+names = [name.strip('"') for name in namesString.split(',')]
 #then use the built-in sorting function
 names.sort()
 #create a dictionary giving the index of each letter
@@ -36,11 +36,11 @@ dict = {
  'Y':25,
  'Z':26
  }
-answer=0
-for i in range(0,len(names)):
-    tmp=0
-    for j in range(0,len(names[i])):
-        tmp+=dict[names[i][j]]
-    tmp*=(i+1)
-    answer+=tmp
+answer = 0
+for i in range(0, len(names)):
+    tmp = 0
+    for j in range(0, len(names[i])):
+        tmp += dict[names[i][j]]
+    tmp *= (i + 1)
+    answer += tmp
 print(answer)
