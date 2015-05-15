@@ -10,22 +10,14 @@ def primeTest(n):
             return False
     return True
 #let's find all the primes from 2 to 1000 (b has to be prime because of when n=0)
-bCandidates = []
-for i in range(2, 1000):
-    if primeTest(i) == True:
-        bCandidates.append(i)
-#a has to be odd, because if a is even then a+1 is odd, which forces b to be even, this goes against the case when n=0
-aCandidates = []
-for i in range(-999, 1000, 2):
-    aCandidates.append(i)
+bCandidates = [i for i in range(2, 1000) if primeTest(i)]
+aCandidates = [i for i in range(-999, 1000, 1)]
 #how many primes does a polynome generate?
 def primeChainLength(a, b):
-    l = 0
     n = 0
     while primeTest(n ** 2 + a * n + b) == True:
         n += 1
-        l += 1
-    return l
+    return n
 #now let's go through every possibility, you don't have to use a matrix if you want to go faster (but then you won't get any plot!)
 M = numpy.empty([len(aCandidates), len(bCandidates)])
 answer = 0
@@ -40,7 +32,12 @@ for i in range(0, len(aCandidates)):
             answer = a * b
 print(answer)
 #let's color plot the matrix
-plt.imshow(M.T, cmap = cm.coolwarm, interpolation = 'nearest', origin = 'lower')
-plt.savefig('Problem_27.pdf', bbox_inches = 'tight')
+fig, ax = plt.subplots(figsize=(6,6))
+ax.imshow(M.T, cmap = cm.coolwarm, interpolation = 'nearest', origin = 'lower')
+ax.set_aspect(2)
+ax.set_xlabel('$a$')
+ax.set_ylabel('$b$')
+ax.set_title(r'Length of prime chain of $n^2+an+b$')
+#plt.savefig('Problem_27.pdf', bbox_inches = 'tight')
 #and display it
 plt.show()

@@ -18,6 +18,7 @@ T = [[int(i) for i in line.strip().split()] for line in tree.splitlines()]
 for i in range(len(T) - 2, -1, -1):
     for j in range(0, i + 1):
         T[i][j] += max(T[i + 1][j], T[i + 1][j + 1])
+        print (T)
 print(T[0][0])
 
 
