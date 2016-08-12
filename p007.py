@@ -5,6 +5,7 @@ def prime(n):
         if n % i == 0:
             return False
     return True
+
 primes = [2]
 n = 3
 while len(primes) < 10001:

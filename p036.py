@@ -3,14 +3,16 @@ def base(n, b):
         return str(n)
     else:
         return base(n // b, b) + str(n % b)
+
 # From problem 4
-def palindrome(number):                                         
-    string = str(number)                                          
-    checker = True                                                   
-    for i in range(0, len(string) // 2):                           
-        if string[i] != string[len(string) - 1 - i]:                  
-            checker = False                                           
+def palindrome(number):
+    string = str(number)
+    checker = True
+    for i in range(0, len(string) // 2):
+        if string[i] != string[len(string) - 1 - i]:
+            checker = False
     return checker
+
 answer = 0
 for i in range(0, 10):
     for j in range(0, 10):
